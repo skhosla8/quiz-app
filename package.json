@@ -4,8 +4,8 @@
   "main": "node_modules/expo/AppEntry.js",
   "homepage": "https://skhosla8.github.io/quiz-app/#/",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -t -d dist",
+    "predeploy": "expo export -p web",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
